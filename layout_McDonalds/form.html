@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>McDonalds - Candidatura</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img id="logo" src="images/logo.png" width="50" alt="link HOMEPAGE ">
+                </a>
+            </li>
+            <li>
+                <input type="search" placeholder="ricerca..">
+                <input type="submit" value="cerca" name="ricerca">
+            </li>
+        </ul>  
+    </nav>
+    <main>
+        <section>
+           <!-- l'action del form è un servizio che ti restituisce i dati inseriti -->
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="get" id="form-candidatura">
+        <div id="form-nome">
+            <label for="nome">nome: </label>
+            <input type="text" id="nome" name="nome" required autofocus>
+        </div>
+    
+        <div id="form-cognome">
+            <label for="cognome">cognome: </label>
+            <input type="text" id="cognome" name="cognome">
+        </div>
+    
+        <div class="form-eta">
+            <label for="data-nascita">data di nascita: </label>
+            <input type="date" min="1900-01-01" max="2011-01-01" name="nascita">
+        </div>  
+
+        <div id="form-email">
+            <label for="email">email: </label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <label for="textarea">Descrivici le tue esperienze: </label>
+        <textarea name="esperienze-candidato" cols="30" rows="10" id="textarea"></textarea>
+        
+        <fieldset>
+            <legend>disponibilità</legend>
+            <div id="radio-">
+                <input type="radio" name="disponibilità" id="full">
+                <label for="full">full-time</label>
+            </div>
+
+            <div id="radio-">
+                <input type="radio" name="disponibilità" id="part">                    
+                <label for="part">part-time</label>
+            </div>
+
+            <div id="radio-">
+                <input type="radio" name="disponibilità" id="weekend">                    
+                <label for="weekend">solo week-end</label>
+            </div>
+            
+            <div id="form-turno-notturno">
+                <input type="checkbox" id="turno-notturno" name="turno-notturno">
+                <label for="turno-notturno">Dichiaro la disponibilità al turno notturno</label>    
+            </div>
+        </fieldset>
+
+        <div id="form-provincia">
+            <label for="provincia">provincia: </label>
+            <select id="provincia" name="provincia">
+                <!-- Solo le città metropolitane in ordine alfabetico -->
+                <option name="Bari" value="Bari">Bari</option>
+                <option name="Bologna" value="Bologna">Bologna</option>
+                <option name="Cagliari" value="Cagliari">Cagliari</option>
+                <option name="Catania" value="Catania">Catania</option>
+                <option name="Firenze" value="Firenze">Firenze</option>
+                <option name="Genova" value="Genova">Genova</option>
+                <option name="Messina" value="Messina">Messina</option>
+                <option name="Milano" value="Milano">Milano</option>
+                <option name="Napoli" value="Napoli">Napoli</option>
+                <option name="Palermo" value="Palermo">Palermo</option>
+                <option name="Reggio Calabria" value="Reggio Calabria">Reggio Calabria</option>
+                <option name="Roma Capitale" value="Roma Capitale">Roma Capitale</option>
+                <option name="Torino" value="Torino">Torino</option>
+                <option name="Venezia" value="Venezia">Venezia</option>
+            </select>
+        </div>
+
+        <div id="form-trasferimento">
+            <input type="checkbox" id="trasferimento" name="disponibile-al-trasferimento">
+            <label for="trasferimento">Dichiaro la disponibilità al trasferimento</label>    
+        </div>
+
+        <div id="form-Dati">
+            <input type="checkbox" id="Dati" name="trattamento" required>
+            <label for="Dati">
+                <i>Autorizzo il trattamento dei miei dati personali, ai sensi del D. lgs. 196 del 30 giugno 2003”</i>
+            </label>    
+        </div>
+        <div id="form-Submit">
+            <input type="submit" value="Candidati">
+        </div>
+    </form> 
+    </section>
+    <aside>
+        <figure>
+            <img src="images/impiegati.jpg" alt="logo">
+            <figcaption>Siamo alla ricerca di nuove figure professionali da inserire all’interno dei nostri ristoranti. Scegli tra gli annunci quello più vicino a te oppure invia la tua candidatura spontanea.</figcaption>
+        </figure>
+    </aside>
+    </main>
+    <footer>
+        <ul>
+            <li>Contatti</li>
+            <li>P IVA</li>
+            <li>Sede legale</li>
+            <li>FAQ</li>
+            <li>Regolamenti</li>
+            <li>Privacy</li>
+            <li>Cookies</li>
+            <li>Termini e condizioni</li>
+        </ul>
+    </footer>
+</body>
+</html>

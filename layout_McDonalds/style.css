@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* stili elementi generici */
+
+h1 {
+    color: #c40005;
+    font-size: 36px;
+}
+
+h2 {
+    color: rgb(39, 39, 39);
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(158, 19, 19)
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+nav, main, section, aside, footer {
+    padding: 12px;
+}
+
+/* barra menu principale */
+
+nav {
+    background-color: orange;
+    min-width: 700px;
+}
+
+nav a {
+    transition: color .1s;
+}
+
+nav a:hover {
+    color: #c40005;
+    text-decoration: underline;
+}
+
+nav ul {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    line-height: 0;
+}
+
+nav li {
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+nav input[type=search] {
+    /* color: white; */
+    /* background-color: transparent; */
+    border: none;
+    border-radius: 2px;
+    /* border-bottom: solid 1px white; */
+    padding: 3px 0 3px 3px;
+}
+
+nav input[type=search]:focus {
+    outline: none;
+}
+
+img[src="images/logo.png"] {
+    border-radius: 10%;
+    width: 70px;
+}
+
+/* parte principale */
+
+main {
+    display: flex;
+    width: 80%;
+    min-width: 500px;
+    margin: auto;
+    /* border: solid 1px black */
+}
+
+section {
+    background-color: #ddd;
+    width: 70%;
+}
+
+section#action, #lavoro {
+    width: 100%;
+}
+
+/* form */
+
+form > * {
+    margin-bottom: 12px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset > * {
+    margin-bottom: 6px;
+}
+
+input[type=text],
+input[type=email],
+input[type=date]
+{
+    float: right;
+    width: 50%;
+    padding-left: 6px;
+}
+
+/* tasto "invia candidatura" */
+input[type=submit]:first-child {
+    border: none;
+    font-size: medium;
+    padding: 16px;
+    border-radius: 2px;
+}
+
+
+input[type=submit] {
+    border: none;
+    padding: 3px 12px;
+    border-radius: 2px;
+}
+
+textarea {
+    width: 100%;
+}
+
+/* sezione in rosso con logo */
+
+aside {
+    padding: 20px;
+    width: 30%;
+    background-color: red;
+    color: white;
+}
+
+aside img {
+    margin-bottom: 18px;
+    border-radius: 5px;
+}
+
+/* footer */
+
+footer {
+    background-color: orange;
+    color: white;
+    /* font-size: small; */
+    padding: 30px 12px;
+}
+
+footer img {
+    width: 40%;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100px;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
